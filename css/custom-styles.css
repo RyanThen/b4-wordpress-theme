@@ -1,0 +1,14 @@
+main .jumbotron {
+	border-radius: 0;
+}
+
+.show-thumbnail img {
+	width: 100% !important;
+	height: 225px !important;
+	object-fit: cover;
+}
+
+.anchor-regular {
+	font-size: 20px;
+	padding: 8px;
+}
