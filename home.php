@@ -70,15 +70,17 @@
 				the_post(); ?>
 				<div class="blog-post">
 					<h2 class="blog-post-title"><?php the_title(); ?></h2>
-					<p class="blog-post-meta">Published on <?php echo date('M d, Y'); ?> by <a href="#"><?php the_author(); ?></a></p>
+					<p class="blog-post-meta">Published on <?php echo date('M d, Y'); ?> by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a></p>
 					<?php the_content(); ?>
 				</div><!-- /.blog-post -->
-			<?php } ?>
+			<?php }
+				echo paginate_links();
+			?>
 			
-			<nav class="blog-pagination">
-				<a class="btn btn-outline-primary" href="#">Older</a>
-				<a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
-			</nav>
+<!--			<nav class="blog-pagination">-->
+<!--				<a class="btn btn-outline-primary" href="#">Older</a>-->
+<!--				<a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>-->
+<!--			</nav>-->
 		
 		</div><!-- /.blog-main -->
 		
