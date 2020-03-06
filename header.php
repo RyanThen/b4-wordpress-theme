@@ -40,7 +40,7 @@
 	</style>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 <header>
 	<div class="collapse bg-dark" id="navbarHeader">
 		<div class="container">
