@@ -45,7 +45,7 @@
 				<div class="col p-4 d-flex flex-column position-static">
 <!--					<strong class="d-inline-block mb-2 text-primary">World</strong>-->
 					<h3 class="mb-0"><?php the_title(); ?></h3>
-					<div class="mb-1 text-muted">Nov 12</div>
+					<div class="mb-1 text-muted"><?php echo date('M d, Y'); ?></div>
 					<p class="card-text mb-auto"><?php echo wp_trim_words(get_the_content(), 20); ?></p>
 					<a href="<?php the_permalink(); ?>" class="stretched-link">Continue reading</a>
 				</div>
@@ -55,8 +55,17 @@
 			</div>
 		</div>
 	
-	<?php } wp_reset_postdata(); ?>
+	<?php }
+	wp_reset_postdata(); ?>
 	
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col text-center mt-3 mb-4">
+			<?php echo paginate_links(); ?>
+		</div>
 	</div>
 </div>
 
@@ -73,9 +82,7 @@
 					<p class="blog-post-meta">Published on <?php echo date('M d, Y'); ?> by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a></p>
 					<?php the_content(); ?>
 				</div><!-- /.blog-post -->
-			<?php }
-				echo paginate_links();
-			?>
+			<?php } ?>
 			
 <!--			<nav class="blog-pagination">-->
 <!--				<a class="btn btn-outline-primary" href="#">Older</a>-->
