@@ -27,7 +27,7 @@
 					</div>
 				</div>
 			<?php else: ?>
-				<p>here is the else statement</p>
+				<p>here is the else statement for the featured post</p>
 			<?php endif; ?>
 		
 		<?php endwhile; ?>
@@ -50,7 +50,14 @@
 					<a href="<?php the_permalink(); ?>" class="stretched-link">Continue reading</a>
 				</div>
 				<div class="col-auto d-none d-lg-block">
-					<svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+					<?php
+					if ( has_post_thumbnail() ) { ?>
+						<div class="show-thumbnail blog-thumbnails">
+							<?php the_post_thumbnail(); ?>
+						</div>
+					<?php } else { ?>
+						<svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Placeholder</text></svg>
+					<?php } ?>
 				</div>
 			</div>
 		</div>
@@ -78,7 +85,7 @@
 			if (have_posts()) {
 				the_post(); ?>
 				<div class="blog-post">
-					<h2 class="blog-post-title"><?php the_title(); ?></h2>
+					<h2 class="blog-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 					<p class="blog-post-meta">Published on <?php echo date('M d, Y'); ?> by <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a></p>
 					<?php the_content(); ?>
 				</div><!-- /.blog-post -->
