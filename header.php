@@ -1,14 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-	<meta charset="utf-8">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 	<meta name="generator" content="Jekyll v3.8.6">
-	<title>Album example · Bootstrap</title>
-	
-	
 	
 	<?php
 	
@@ -22,22 +19,6 @@
 	
 	?>
 	
-	<style>
-		.bd-placeholder-img {
-			font-size: 1.125rem;
-			text-anchor: middle;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
-		}
-		
-		@media (min-width: 768px) {
-			.bd-placeholder-img-lg {
-				font-size: 3.5rem;
-			}
-		}
-	</style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -47,7 +28,7 @@
 			<div class="row">
 				<div class="col-sm-8 col-md-7 py-4">
 					<h4 class="text-white">About</h4>
-					<p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+					<p class="text-muted">Here at Songbird Music Hall we care about our fans.  Everything we do has you in mind.  If you come to one of our shows, you'll see just how much we care.</p>
 				</div>
 				<div class="col-sm-4 offset-md-1 py-4">
 					<h4 class="text-white">Contact</h4>
