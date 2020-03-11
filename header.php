@@ -23,7 +23,7 @@
 
 <body <?php body_class(); ?>>
 <header>
-	<div class="collapse bg-dark" id="navbarHeader">
+	<div class="collapse bg-dark main-nav" id="navbarHeader">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8 col-md-7 py-4">
@@ -34,10 +34,10 @@
 					<h4 class="text-white">Contact</h4>
 					<ul class="list-unstyled">
 						<li><a href="<?php echo site_url('/shows') ?>">Shows</a></li>
-						<li><a href="<?php echo site_url('/events') ?>">Events</a></li>
 						<li><a href="<?php echo site_url('/blog') ?>">Blog</a></li>
 						<li><a href="<?php echo site_url('/directions') ?>">Directions</a></li>
 						<li><a href="<?php echo site_url('/contact') ?>">Contact</a></li>
+						<li><a href="<?php echo site_url('/search') ?>"><i class="fa fa-search" aria-hidden="true"></i> Search</a></li>
 				</div>
 			</div>
 		</div>
