@@ -8,11 +8,13 @@
 	<meta name="generator" content="Jekyll v3.8.6">
 	
 	<?php
-	
+//	Set up different bootstrap templates
 	if( is_home() ) {
 		echo '<link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/blog/">';
 	} elseif( is_front_page() || get_post_type('show') ) {
 		echo '<link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">';
+	} elseif( is_page('Tickets') ) {
+		echo '<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/pricing/">';
 	};
 	
 	wp_head();
