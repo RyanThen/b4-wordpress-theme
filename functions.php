@@ -6,8 +6,11 @@ function dnd_files() {
 	wp_enqueue_style('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 	wp_enqueue_style('album', get_template_directory_uri() . '/css/album.css');
 	wp_enqueue_style('custom-styles', get_template_directory_uri() . '/css/custom-styles.css');
-	if(is_page('blog')) {
+	if(is_home()) {
 		wp_enqueue_style('album', get_template_directory_uri() . '/css/blog.css');
+	}
+	if(is_page('Tickets')) {
+		wp_enqueue_style('pricing', get_template_directory_uri() . '/css/pricing.css');
 	}
 	
 	//Enqueue Scripts
