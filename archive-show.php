@@ -6,12 +6,8 @@ get_header();
 
 	<section class="jumbotron text-center">
 		<div class="container">
-			<h1>Welcome to Songbird Music Hall</h1>
-			<p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-			<p>
-				<a href="#" class="btn btn-primary my-2">Main call to action</a>
-				<a href="#" class="btn btn-secondary my-2">Secondary action</a>
-			</p>
+			<h1>Shows at Songbird Music Hall</h1>
+			<p class="lead text-muted">We've got a ton of upcoming shows.  Take a look at the groups that have already committed!</p>
 		</div>
 	</section>
 
@@ -46,7 +42,7 @@ get_header();
 								<p class="card-text"><?php echo wp_trim_words(get_the_content(), 15); ?></p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">Tickets</button>
+										<a href="<?php echo site_url('/Tickets'); ?>"><button type="button" class="btn btn-sm btn-outline-secondary">Tickets</button></a>
 										<button type="button" class="btn btn-sm btn-outline-secondary">Music Sample</button>
 									</div>
 								</div>
@@ -108,7 +104,7 @@ get_header();
 								<p class="card-text"><?php echo wp_trim_words(get_the_content(), 15); ?></p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">More info</button>
+										<a href="<?php the_permalink(); ?>"><button type="button" class="btn btn-sm btn-outline-secondary">More info</button></a>
 										<button type="button" class="btn btn-sm btn-outline-secondary">Music Sample</button>
 									</div>
 								</div>
@@ -119,6 +115,12 @@ get_header();
 				<?php } wp_reset_postdata(); ?>
 
 			</div>
+			
+			<div class="text-center mt-5 mb-3">
+				<h3>Explore More</h3>
+				<?php get_search_form(); ?>
+			</div>
+			
 		</div>
 	</div>
 
