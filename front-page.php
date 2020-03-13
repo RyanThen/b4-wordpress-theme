@@ -6,13 +6,13 @@ get_header();
 	
 <!--	<section class="jumbotron text-center" style="background-image: url("--><?php //echo site_url('/img/main-stage.jpg'); ?><!--")">-->
 	
-	<section class="jumbotron text-center" style="background-image: url(<?php echo get_template_directory_uri() . '/img/main-stage.jpg'; ?>); background-size: cover; background-position: 50% 75%;">
+	<section class="jumbotron text-left" style="background-image: url(<?php echo get_template_directory_uri() . '/img/main-stage.jpg'; ?>); background-size: cover; background-position: 50% 75%;">
 		<div class="container">
 			<h1 class="text-white">Welcome to Songbird Music Hall</h1>
 			<p class="lead text-white">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
 			<p>
 				<a href="#" class="btn btn-primary my-2">Main call to action</a>
-				<a href="#" class="btn btn-secondary my-2">Secondary action</a>
+<!--				<a href="#" class="btn btn-secondary my-2">Secondary action</a>-->
 			</p>
 		</div>
 	</section>
@@ -50,22 +50,22 @@ get_header();
 							<?php
 							if ( has_post_thumbnail() ) { ?>
 								<div class="card-img-top show-thumbnail">
-									<?php the_post_thumbnail('imageLandscapeSmall'); ?>
+									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('imageLandscapeSmall'); ?></a>
 								</div>
 							<?php } else { ?>
-								<svg class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"><?php the_title(); ?></text></svg>
+								<a href="<?php the_permalink(); ?>"><svg class="bd-placeholder-img card-img-top" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg></a>
 							<?php } ?>
 
 							<div class="card-body">
-								<h5><?php the_title(); ?></h5>
+								<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h5></a>
 								<p><?php
-									$the_show_date = get_field('show_date');
-									echo $the_show_date;
+									$get_show_date = get_field('show_date');
+									echo $get_show_date;
 									?></p>
 								<p class="card-text"><?php echo wp_trim_words(get_the_content(), 15); ?></p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary"><a href="<?php echo site_url('/Tickets'); ?>">Tickets</a></button>
+										<a href="<?php echo site_url('/Tickets'); ?>"><button type="button" class="btn btn-sm btn-outline-secondary">Tickets</button></a>
 										<button type="button" class="btn btn-sm btn-outline-secondary">Music Sample</button>
 									</div>
 								</div>
@@ -105,19 +105,23 @@ get_header();
 							));
 							
 							while($blogQuery->have_posts()) {
-								$blogQuery->the_post();	?>
-							<div class="carousel-item <?php if ($firstSlide == true) {
-								echo 'active';
-								$firstSlide = false;
-							} else {
-								$firstSlide = false;
-							} ?>">
-								<img class="d-block w-100" src="<?php echo get_template_directory_uri() . '/img/main-stage.jpg'; ?>" alt="slide">
-								<div class="carousel-caption d-none d-md-block">
-									<h5><?php the_title(); ?></h5>
-									<p><?php echo wp_trim_words(get_the_content(), 15); ?></p>
+								$blogQuery->the_post();
+								
+								// get the ID of the featured image
+								$thumbnail_id = get_post_thumbnail_id( $post_id );
+								?>
+								<div class="carousel-item <?php if ($firstSlide == true) {
+									echo 'active';
+									$firstSlide = false;
+								} else {
+									$firstSlide = false;
+								} ?>">
+									<a href="<?php the_permalink(); ?>"><img class="d-block w-100" src="<?php the_post_thumbnail_url('imagePortraitLarge'); ?>" alt="<?php echo esc_url( get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true) ); ?>"></a>
+									<div class="carousel-caption d-none d-md-block">
+										<h5><?php the_title(); ?></h5>
+										<p><?php echo wp_trim_words(get_the_content(), 15); ?></p>
+									</div>
 								</div>
-							</div>
 							<?php } ?>
 						</div>
 						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -131,7 +135,12 @@ get_header();
 					</div>
 				</div>
 			</div>
-			
+
+			<div class="row mt-4 mb-5">
+				<div class="col text-center">
+					<a class="anchor-regular" href="<?php echo site_url('/blog'); ?>">View Blog</a>
+				</div>
+			</div>
 		</div>
 	</div>
 
