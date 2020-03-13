@@ -19,7 +19,7 @@
 		<?php while ( $featured_blog_post->have_posts() ) : $featured_blog_post->the_post(); ?>
 			
 			<?php if ( get_field( 'featured_post' ) ): ?>
-				<div class="jumbotron mt-5 p-4 p-md-5 text-white rounded bg-dark">
+				<div class="jumbotron mt-5 mb-4 p-4 p-md-5 text-white rounded bg-dark">
 					<div class="col-md-6 px-0">
 						<h1 class="display-4 font-italic"><?php the_title() ?></h1>
 						<p class="lead my-3"><?php echo wp_trim_words(get_the_content(), 30); ?></p>
@@ -82,7 +82,7 @@
 			<h3 class="pb-4 mb-4 font-italic border-bottom">Most Recent Post</h3>
 			
 			<?php
-			if (have_posts()) {
+			if(have_posts()) {
 				the_post(); ?>
 				<div class="blog-post">
 					<h2 class="blog-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
