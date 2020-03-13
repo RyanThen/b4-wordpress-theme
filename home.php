@@ -19,7 +19,7 @@
 		<?php while ( $featured_blog_post->have_posts() ) : $featured_blog_post->the_post(); ?>
 			
 			<?php if ( get_field( 'featured_post' ) ): ?>
-				<div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+				<div class="jumbotron mt-5 p-4 p-md-5 text-white rounded bg-dark">
 					<div class="col-md-6 px-0">
 						<h1 class="display-4 font-italic"><?php the_title() ?></h1>
 						<p class="lead my-3"><?php echo wp_trim_words(get_the_content(), 30); ?></p>
@@ -56,7 +56,7 @@
 							<?php the_post_thumbnail(); ?>
 						</div>
 					<?php } else { ?>
-						<svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Placeholder</text></svg>
+						<svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
 					<?php } ?>
 				</div>
 			</div>
