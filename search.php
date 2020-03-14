@@ -46,7 +46,7 @@ get_header();
 		</div>
 		
 		<div class="row mt-5">
-			<div class="col text-center"><?php get_search_form(); ?></div>
+			<div class="col"><?php get_search_form(); ?></div>
 		</div>
 	</div> <!-- End Page Container Div -->
 
