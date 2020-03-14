@@ -60,7 +60,7 @@ get_header();
 							<?php } ?>
 
 							<div class="card-body">
-								<h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></h5></a>
+								<h5><a class="card-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></h5></a>
 								<p><?php
 									$get_show_date = get_field('show_date');
 									echo $get_show_date;

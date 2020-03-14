@@ -33,7 +33,7 @@
 					<p class="text-muted">Here at Songbird Music Hall we care about our fans.  Everything we do has you in mind.  If you come to one of our shows, you'll see just how much we care.</p>
 				</div>
 				<div class="col-sm-4 offset-md-1 py-4">
-					<h4 class="text-white">Contact</h4>
+					<h4 class="text-white">Menu</h4>
 					<ul class="list-unstyled">
 						<li><a href="<?php echo site_url('/shows') ?>">Shows</a></li>
 						<li><a href="<?php echo site_url('/blog') ?>">Blog</a></li>
