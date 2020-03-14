@@ -5,17 +5,20 @@ get_header();
 <main role="main">
 	
 <!--	<section class="jumbotron text-center" style="background-image: url("--><?php //echo site_url('/img/main-stage.jpg'); ?><!--")">-->
-	
-	<section class="jumbotron text-left" style="background-image: url(<?php echo get_template_directory_uri() . '/img/main-stage.jpg'; ?>); background-size: cover; background-position: 50% 75%;">
+	<?php while(have_posts()) {
+		the_post();
+		$site_intro = get_field('site_intro'); ?>
+	<section class="jumbotron text-left" style="background-size: cover; background-position: 50% 75%; background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');">
 		<div class="container">
-			<h1 class="text-white">Welcome to Songbird Music Hall</h1>
-			<p class="lead text-white">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+			<h1 class="text-white"><?php echo ($site_intro ? $site_intro : 'Welcome!'); ?></h1>
+			<div class="lead text-white"><?php the_content(); ?></div>
 			<p>
-				<a href="#" class="btn btn-primary my-2">Main call to action</a>
+				<a href="<?php echo esc_url(site_url('/tickets')) ?>" class="btn btn-primary my-2">Buy Tickets</a>
 <!--				<a href="#" class="btn btn-secondary my-2">Secondary action</a>-->
 			</p>
 		</div>
 	</section>
+	<?php } ?>
 	
 	<div class="album py-5 bg-light">
 		<div class="container">
