@@ -1,3 +1,31 @@
+a:hover {
+	text-decoration: none !important;
+}
+
+/*Navigation*/
+#navbarHeader li a {
+	color: white;
+}
+
+
+/*Front Page*/
+.card-body .card-title {
+	color: #0056b3;
+}
+
+/*Search*/
+.headline-underline {
+	text-decoration: underline;
+}
+.main-nav .list-unstyled li:last-child {
+	margin-top: 15px;
+}
+.main-nav .list-unstyled li:last-child a {
+	text-decoration: none;
+	color: white;
+}
+
+
 /* Blog Home */
 main .jumbotron {
 	border-radius: 0;
@@ -12,6 +40,10 @@ main .jumbotron {
 .anchor-regular {
 	font-size: 20px;
 	padding: 8px;
+}
+
+.stretched-link-blog {
+	color: #0056b3;
 }
 
 .blog-thumbnails {
