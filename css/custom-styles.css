@@ -7,13 +7,7 @@ a:hover {
 	color: white;
 }
 
-
-/*Front Page*/
-.card-body .card-title {
-	color: #0056b3;
-}
-
-/*Search*/
+/* Nav Search*/
 .headline-underline {
 	text-decoration: underline;
 }
@@ -23,6 +17,12 @@ a:hover {
 .main-nav .list-unstyled li:last-child a {
 	text-decoration: none;
 	color: white;
+}
+
+
+/*Front Page*/
+.card-body .card-title {
+	color: #0056b3;
 }
 
 
@@ -48,4 +48,20 @@ main .jumbotron {
 
 .blog-thumbnails {
 	width: 200px;
+}
+
+
+/* Searchform */
+.headline-medium {
+	font-size: 22px;
+	font-weight: 700;
+	padding: 15px;
+}
+
+.search-form input.the-search {
+	max-width: 500px;
+}
+
+.search-input-group {
+	justify-content: center;
 }
