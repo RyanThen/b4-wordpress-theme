@@ -25,12 +25,11 @@ get_header();
 					<div class="card-body">
 						<h1 class="card-title pricing-card-title">$<?php echo $ticket_price_1; ?></h1>
 						<ul class="list-unstyled mt-3 mb-4">
-							<li>20 users included</li>
-							<li>10 GB of storage</li>
-							<li>Priority email support</li>
-							<li>Help center access</li>
+							<li>Lawn Seats</li>
+							<li>General Access</li>
+							<li>General Discounts</li>
 						</ul>
-						<button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+						<a href="#"><button type="button" class="btn btn-lg btn-block btn-primary">Buy Now</button></a>
 					</div>
 				</div>
 				<div class="card mb-4 box-shadow">
@@ -40,12 +39,11 @@ get_header();
 					<div class="card-body">
 						<h1 class="card-title pricing-card-title">$<?php echo $ticket_price_2; ?></h1>
 						<ul class="list-unstyled mt-3 mb-4">
-							<li>20 users included</li>
-							<li>10 GB of storage</li>
-							<li>Priority email support</li>
-							<li>Help center access</li>
+							<li>Pavillion Seating</li>
+							<li>Free Drink</li>
+							<li>Early Entry</li>
 						</ul>
-						<button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+						<a href="#"><button type="button" class="btn btn-lg btn-block btn-primary">Buy Now</button></a>
 					</div>
 				</div>
 				<div class="card mb-4 box-shadow">
@@ -55,12 +53,11 @@ get_header();
 					<div class="card-body">
 						<h1 class="card-title pricing-card-title">$<?php echo $ticket_price_3; ?></h1>
 						<ul class="list-unstyled mt-3 mb-4">
-							<li>20 users included</li>
-							<li>10 GB of storage</li>
-							<li>Priority email support</li>
-							<li>Help center access</li>
+							<li>Front Row</li>
+							<li>Access to Band</li>
+							<li>Early Entry</li>
 						</ul>
-						<button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+						<a href="#"><button type="button" class="btn btn-lg btn-block btn-primary">Buy Now</button></a>
 					</div>
 				</div>
 				<?php }; ?>
