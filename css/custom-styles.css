@@ -50,6 +50,10 @@ main .jumbotron {
 	width: 200px;
 }
 
+.blog-post-title a {
+	color: black;
+}
+
 
 /* Searchform */
 .headline-medium {
