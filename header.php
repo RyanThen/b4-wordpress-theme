@@ -30,7 +30,7 @@
 			<div class="row">
 				<div class="col-sm-8 col-md-7 py-4">
 					<h4 class="text-white">About</h4>
-					<p class="text-muted">Here at Songbird Music Hall we care about our fans.  Everything we do has you in mind.  If you come to one of our shows, you'll see just how much we care.</p>
+					<p class="text-muted"><?php the_field('about_desc', get_option('page_for_posts')); ?></p>
 				</div>
 				<div class="col-sm-4 offset-md-1 py-4">
 					<h4 class="text-white">Menu</h4>

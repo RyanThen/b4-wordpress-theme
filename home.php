@@ -100,7 +100,7 @@
 		<aside class="col-md-4 blog-sidebar">
 			<div class="p-4 mb-3 bg-light rounded">
 				<h4 class="font-italic">About</h4>
-				<p class="mb-0"><?php the_field('blog_about', get_option('page_for_posts')); ?></p>
+				<p class="mb-0"><?php the_field('about_desc', get_option('page_for_posts')); ?></p>
 			</div>
 			
 			<div class="p-4">
