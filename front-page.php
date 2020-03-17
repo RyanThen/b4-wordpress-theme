@@ -149,7 +149,13 @@ get_header();
 
 </main>
 
-
+<!-- Sticky Notification -->
+<div id="stickyNotification" class="sticky-notification">
+	<div class="notification-inner container text-center">
+		<p>View source code for this theme <a href="https://github.com/RyanThen/b4-wordpress-theme" target="_blank">here</a></p>
+	</div>
+	<div id="x" class="x">x</div>
+</div>
 
 <?php
 get_footer();
