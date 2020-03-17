@@ -18,6 +18,7 @@ function dnd_files() {
 	//Enqueue Scripts
 	wp_enqueue_script('jquery', '', NULL, false, true);
 	wp_enqueue_script('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', NULL, false, true);
+	wp_enqueue_script('custom-scripts', get_template_directory_uri() . '/js/custom-scripts.js', NULL, false, true);
 }
 add_action('wp_enqueue_scripts', 'dnd_files');
 
