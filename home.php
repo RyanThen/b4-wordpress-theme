@@ -27,7 +27,9 @@
 					</div>
 				</div>
 			<?php else: ?>
-				<p>here is the else statement for the featured post</p>
+				<div class="mt-5 mb-5">
+					<h2 class="text-center">Welcome to our blog!</h2>
+				</div>
 			<?php endif; ?>
 		
 		<?php endwhile; ?>
