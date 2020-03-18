@@ -13,7 +13,7 @@
 		<?php } else { ?>
 			<svg class="bd-placeholder-img card-img-top mt-4" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"><?php the_title(); ?></text></svg>
 		<?php } ?>
-		<div class="mt-5 pb-5">
+		<div class="mt-4 pb-5">
 			<?php the_content(); ?>
 		</div>
 	<?php }; ?>
