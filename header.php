@@ -24,7 +24,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<header>
+<header id="header">
 	<div class="collapse bg-dark main-nav" id="navbarHeader">
 		<div class="container">
 			<div class="row">
