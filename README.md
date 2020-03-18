@@ -7,11 +7,12 @@ Served from a CDN
 - jQuery 1.11.3 (WordPress default version)
 
 ## Basic Features
+- Custom fields with ACF
 - Fully responsive
 - Fully functional search
 - Custom post type
 - Custom queries
-- Custom fields with ACF
 - Slider which pulls in most recent blog posts
 - Ninja Forms integration
+- Open source
 - Clean, intuitive code
