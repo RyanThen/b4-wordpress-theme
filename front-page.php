@@ -147,6 +147,12 @@ get_header();
 		</div>
 	</div>
 
+	<div class="text-center mt-5">
+		<h2 class="headline--medium">Explore more</h2>
+	</div>
+	
+	<?php echo get_search_form(); ?>
+
 </main>
 
 <!-- Sticky Notification -->
@@ -157,9 +163,10 @@ get_header();
 	<div id="x" class="x">x</div>
 </div>
 
+
+
 <?php
 get_footer();
-
 wp_footer();
 ?>
 
