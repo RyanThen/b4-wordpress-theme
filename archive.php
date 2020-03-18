@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<?php while(have_posts()){
-	the_post(); ?>
+<?php //while(have_posts()){
+//	the_post(); ?>
 <div class="container mt-5">
-	<h1><?php the_archive_title(); ?></h1>
+	<h1 class="mb-4"><?php the_archive_title(); ?></h1>
 	<?php if ( has_post_thumbnail() ) { ?>
 		<div class="card-img-top show-thumbnail">
 			<?php the_post_thumbnail(); ?>
@@ -14,6 +14,6 @@
 	<p class="pt-5 pb-5"><?php echo get_the_archive_description(); ?></p>
 </div>
 
-<?php }
+<?php //}
 
 get_footer(); ?>
