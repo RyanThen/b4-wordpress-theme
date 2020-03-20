@@ -6,8 +6,8 @@ get_header();
 
 	<section class="jumbotron text-center">
 		<div class="container">
-			<h1>Shows at Songbird Music Hall</h1>
-			<p class="lead text-muted">We've got a ton of upcoming shows.  Take a look at the groups that have already committed!</p>
+			<h1>Shows at Serapin Music Hall</h1>
+			<p class="lead text-muted">We've got a ton of upcoming shows.  Take a look at the groups that have already committed to joining us!</p>
 		</div>
 	</section>
 
