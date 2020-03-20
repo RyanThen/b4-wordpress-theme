@@ -31,6 +31,29 @@ main .jumbotron {
 	border-radius: 0;
 }
 
+.home-jumbo {
+	/*background-image: url("../img/main-stage.jpg");*/
+	background-size: cover;
+	position: relative;
+}
+
+.overlay{
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	background: black;
+	opacity: 0.5;
+}
+
+@media (min-width: 600px) {
+	.home-jumbo {
+		background-position: 0% 65%;
+	}
+	.overlay {
+		background: linear-gradient(to right, black 5%, transparent 50%);
+		opacity: 1;
+	}
+}
+
 .show-thumbnail img {
 	width: 100% !important;
 	height: 250px !important;
