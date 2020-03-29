@@ -1,5 +1,5 @@
 ## About
-This repository is dedicated to the integration of common Bootstrap 4 components into a fully functional WordPress theme. Bootstrap components were taken from Bootstrap's documenation and examples page.
+This repository is dedicated to the integration of common [Bootstrap 4](https://getbootstrap.com/) components into a fully functional WordPress theme. Bootstrap components were taken from Bootstrap's documenation and examples page.
 
 ## Dependencies
 Served from a CDN
