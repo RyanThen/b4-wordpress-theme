@@ -13,7 +13,7 @@ get_header();
 			<h1 class="text-white"><?php echo ($site_intro ? $site_intro : 'Welcome!'); ?></h1>
 			<div class="lead text-white"><?php the_content(); ?></div>
 			<p>
-				<a href="<?php echo esc_url(site_url('/tickets')) ?>" class="btn btn-primary my-2">Buy Tickets</a>
+				<a href="<?php echo esc_url(site_url('/tickets')) ?>" class="btn btn-info my-2">Buy Tickets</a>
 <!--				<a href="#" class="btn btn-secondary my-2">Secondary action</a>-->
 			</p>
 		</div>
@@ -22,9 +22,10 @@ get_header();
 	
 	<div class="album py-5 bg-light">
 		<div class="container">
-			<div class="text-center mb-4">
+			<div class="text-center mb-2">
 				<h2 class="headline--medium">Upcoming Shows</h2>
 			</div>
+			<p class="headline-subtext lead text-center mb-4">Cronut farm-to-table tattooed meditation. Four loko succulents single-origin coffee.</p>
 			
 			<div class="row">
 				<?php
@@ -82,15 +83,16 @@ get_header();
 			
 			<div class="row mb-5">
 				<div class="col text-center">
-					<a class="anchor-regular" href="<?php echo site_url('/shows'); ?>">See All Shows</a>
+					<a class="btn btn-info anchor-regular" href="<?php echo site_url('/shows'); ?>">See All Shows</a>
 				</div>
 			</div>
 		</div>
 		
 		<div class="container">
-			<div class="text-center mb-4">
+			<div class="text-center mb-2">
 				<h2 class="headline--medium">From Our Blog</h2>
 			</div>
+			<p class="headline-subtext lead text-center mb-4">Cronut farm-to-table tattooed meditation. Four loko succulents single-origin coffee tattooed air plant shoreditch bicycle rights bespoke cray freegan lo-fi live-edge meditation bespoke pork.</p>
 			<div class="row">
 				<div class="col">
 					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -98,6 +100,9 @@ get_header();
 							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
 						</ol>
 						<div class="carousel-inner">
 							<?php
@@ -141,7 +146,7 @@ get_header();
 
 			<div class="row mt-4 mb-5">
 				<div class="col text-center">
-					<a class="anchor-regular" href="<?php echo site_url('/blog'); ?>">View Blog</a>
+					<a class="btn btn-info anchor-regular" href="<?php echo site_url('/blog'); ?>">View Blog</a>
 				</div>
 			</div>
 		</div>
