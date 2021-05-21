@@ -15,6 +15,10 @@ html {
 	max-width: 700px;
 }
 
+div.card-body .pricing-card-title {
+	color: #424242; 
+}
+
 .card-deck .card {
 	min-width: 220px;
 }

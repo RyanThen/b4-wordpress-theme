@@ -8,9 +8,6 @@ a:hover {
 }
 
 /* Nav Search*/
-.headline-underline {
-	text-decoration: underline;
-}
 .main-nav .list-unstyled li:last-child {
 	margin-top: 15px;
 }
@@ -24,6 +21,11 @@ a:hover {
 .card-body .card-title {
 	color: #0056b3;
 }
+.headline-subtext {
+	width: 100%;
+	max-width: 810px;
+	margin: 0 auto;
+}
 
 
 /* Blog Home */
@@ -32,7 +34,6 @@ main .jumbotron {
 }
 
 .home-jumbo {
-	/*background-image: url("../img/main-stage.jpg");*/
 	background-size: cover;
 	position: relative;
 }
@@ -49,7 +50,7 @@ main .jumbotron {
 		background-position: 0% 65%;
 	}
 	.overlay {
-		background: linear-gradient(to right, black 5%, transparent 50%);
+		background: linear-gradient(to right, black 10%, transparent 50%);
 		opacity: 1;
 	}
 }
@@ -61,7 +62,7 @@ main .jumbotron {
 }
 
 .anchor-regular {
-	font-size: 20px;
+	font-size: 17px;
 	padding: 8px;
 }
 
