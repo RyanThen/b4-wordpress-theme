@@ -36,6 +36,7 @@ add_action('after_setup_theme', 'dnd_theme_features');
 function dnd_query_adjustments($query) {
 	if (!is_admin() AND is_post_type_archive('show') AND $query->is_main_query()) {
 		$today = date('Ymd');
+		$query->set('posts_per_page', '12');
 		$query->set('meta_key', 'show_date');
 		$query->set('orderby', 'meta_value');
 		$query->set('order', 'ASC');
