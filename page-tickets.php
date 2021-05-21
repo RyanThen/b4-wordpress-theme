@@ -6,6 +6,7 @@ get_header();
 		
 		<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
 			<h1 class="display-4"><?php the_title(); ?></h1>
+			<p class="headline-subtext lead text-center mb-4">Cronut farm-to-table tattooed meditation. Four loko succulents single-origin coffee tattooed air plant shoreditch bicycle rights bespoke cray freegan lo-fi live-edge meditation bespoke pork.</p>
 			<?php
 			$ticket_price_1 = get_field('ticket_price_1');
 			$ticket_price_2 = get_field('ticket_price_2');
@@ -29,7 +30,7 @@ get_header();
 							<li>General Access</li>
 							<li>General Discounts</li>
 						</ul>
-						<a href="#"><button type="button" class="btn btn-lg btn-block btn-primary">Buy Now</button></a>
+						<a href="#"><button type="button" class="btn btn-lg btn-block btn-info">Buy Now</button></a>
 					</div>
 				</div>
 				<div class="card mb-4 box-shadow">
@@ -43,7 +44,7 @@ get_header();
 							<li>Free Drink</li>
 							<li>Early Entry</li>
 						</ul>
-						<a href="#"><button type="button" class="btn btn-lg btn-block btn-primary">Buy Now</button></a>
+						<a href="#"><button type="button" class="btn btn-lg btn-block btn-info">Buy Now</button></a>
 					</div>
 				</div>
 				<div class="card mb-4 box-shadow">
@@ -57,7 +58,7 @@ get_header();
 							<li>Access to Band</li>
 							<li>Early Entry</li>
 						</ul>
-						<a href="#"><button type="button" class="btn btn-lg btn-block btn-primary">Buy Now</button></a>
+						<a href="#"><button type="button" class="btn btn-lg btn-block btn-info">Buy Now</button></a>
 					</div>
 				</div>
 				<?php }; ?>

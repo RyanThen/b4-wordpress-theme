@@ -4,10 +4,10 @@ get_header();
 
 <main role="main">
 
-	<section class="jumbotron text-center">
+	<section class="jumbotron text-center" style="background-image: url(/wp-content/uploads/2021/05/shows-bg-dark.png); background-size: cover;">
 		<div class="container">
-			<h1>Shows at Serapin Music Hall</h1>
-			<p class="lead text-muted">We've got a ton of upcoming shows.  Take a look at the groups that have already committed to joining us!</p>
+			<h1 style="color: white; text-shadow: 2px 2px 2px black;">Shows at Serapin Music Hall</h1>
+			<p style="color: white; text-shadow: 2px 2px 2px black;" class="lead">We've got a ton of great show coming up.  Take a look at the groups that have already scheduled to join the unadulterated good time!</p>
 		</div>
 	</section>
 

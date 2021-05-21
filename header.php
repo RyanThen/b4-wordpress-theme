@@ -36,8 +36,8 @@
 					<h4 class="text-white">Menu</h4>
 					<ul class="list-unstyled">
 						<li><a href="<?php echo site_url('/shows') ?>">Shows</a></li>
+						<li><a href="<?php echo site_url('/tickets') ?>">Tickets</a></li>
 						<li><a href="<?php echo site_url('/blog') ?>">Blog</a></li>
-						<li><a href="<?php echo site_url('/directions') ?>">Directions</a></li>
 						<li><a href="<?php echo site_url('/contact') ?>">Contact</a></li>
 						<li><a href="<?php echo site_url('/search') ?>"><i class="fa fa-search" aria-hidden="true"></i> Search</a></li>
 				</div>
