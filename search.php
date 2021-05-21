@@ -4,7 +4,7 @@ get_header();
 	
 	<div class="container mt-5"> <!-- Start Page Container Div -->
 		<div class="text-left mb-5">
-			<h2 class="headline-underline">View Search Results:</h2>
+			<h2>View Search Results for:&nbsp; <span class="text-muted"><?php echo get_search_query(); ?></span></h2>
 		</div>
 
 		<div class="row">
